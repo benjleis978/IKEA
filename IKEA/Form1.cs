@@ -27,6 +27,7 @@ namespace IKEA
             //Graphic objects
             Graphics g = this.CreateGraphics();
             Pen drawPenB = new Pen(Color.Blue, 5);
+            Pen drawPenC = new Pen(Color.Blue, 1);
             Pen drawPenY = new Pen(Color.Yellow, 5);
             SolidBrush drawBrushY = new SolidBrush(Color.Yellow);
             SolidBrush drawBrushB = new SolidBrush(Color.Blue);
@@ -38,8 +39,8 @@ namespace IKEA
             g.FillRectangle(drawBrushB, 40, 40, 200, 100);
             g.DrawEllipse(drawPenY, 45, 55, 190, 70);
             g.FillEllipse(drawBrushY, 45, 55, 190, 70);
-            // g.DrawEllipse(drawBrushB, )
             //Ristricted symbol
+            g.DrawEllipse(drawPenC, 198, 67, 10, 10);
 
             //Code for Text
             g.DrawString("IKEA", drawFont, drawBrushB, 70, 60);
